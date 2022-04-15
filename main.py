@@ -57,6 +57,16 @@ class MainWidget(Widget):
             ]
             offset += 1
 
+    def transform(self, x: float = 0, y: float = 0):
+        MainWidget.transform_2d(x, y)
+
+    @staticmethod
+    def transform_2d(x, y):
+        return x, y
+
+    def transform_perspective(self, x, y):
+        pass
+
 class Galaxy(App):
     pass
 
